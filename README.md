@@ -1,1 +1,3 @@
-# exercicios-html
+# exercicios-js
+
+Exerccicios em programação JavaScript
