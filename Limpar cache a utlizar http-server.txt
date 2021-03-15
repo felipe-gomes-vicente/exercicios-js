@@ -1,0 +1,3 @@
+http-server -c-1 .
+
+Ao utilizar http-server usar o comando acima

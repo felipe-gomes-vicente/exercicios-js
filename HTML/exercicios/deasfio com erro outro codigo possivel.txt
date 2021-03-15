@@ -1,0 +1,31 @@
+*******************
+*******************
+
+primeira forma utilizar url http://localhost:8080/exercicios/listasAninhadas.html
+*******************
+*******************
+segunda forma:
+executar o desafio direto do index dos exercicios, usando uma função dentro do 'then':
+
+ <script>
+        document.querySelectorAll('[fxnav]').forEach(link => {
+            const conteudo = document.getElementById('conteudo')
+ 
+            link.onclick = function (e) {
+                e.preventDefault()
+                fetch(link.getAttribute('fxnav')) //para atrib personalizado
+                    .then(resp => resp.text())
+                    .then(html => conteudo.innerHTML = html)
+                    .then(() => rodarStript())
+            }
+        })
+        const rodarStript = () => {
+            document.querySelectorAll('[fx-folder]').forEach(folder => {
+                folder.onclick = function (e) {
+                    const ul = folder.nextElementSibling
+                    if (!ul.hidden) ul.hidden = true
+                    else ul.hidden = false
+                }
+            })
+        }
+    </script>
