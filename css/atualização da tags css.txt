@@ -1,0 +1,2 @@
+Para solucionar isso, basta, 
+em vez de utilizar grid-column-gap, usar column-gap. E, em vez de grid-row-gap, usar row-gap
