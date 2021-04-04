@@ -26,4 +26,11 @@ app.post('/upload', (req, res) => {
   res.end('Concluído com sucesso.')
 })
 
+app.post('/formulario', (req, res) => {
+  res.send({
+    ...req.body,
+    id: 7
+  })
+})
+
 app.listen(8081, () => console.log('Executando...'))
