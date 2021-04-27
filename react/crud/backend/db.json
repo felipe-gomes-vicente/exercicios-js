@@ -1,0 +1,11 @@
+{
+  "users": [{
+    "id": 1,
+    "name": "Felipe Oliveira",
+    "email": "fpliveira@developer.com.br"
+  }, {
+    "id": 2,
+    "name": "Bia Silva",
+    "email": "evento@empresa.com"
+  }]
+}
